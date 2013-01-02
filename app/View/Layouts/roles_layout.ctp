@@ -1,3 +1,8 @@
+<?php
+/**
+ * @var $this view
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -31,28 +36,35 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </a>
-	          <?php echo $this->Html->link('MyCompany', '/', array('class' => 'brand')); ?>
+	          <?php echo $this->Html->link('Roles Management', '/', array('class' => 'brand')); ?>
 	          <div class="container nav-collapse">
 	            <ul class="nav">
-	            	<li><?php echo $this->Html->link('Link1', '/link1'); ?></li>
-	                <li><?php echo $this->Html->link('Link2', '/link2'); ?></li>
-	                <li><?php echo $this->Html->link('Link3', '/link3'); ?></li>
+                    <li><?php echo $this->Html->link('Users', '/users'); ?></li>
+                    <li><?php echo $this->Html->link('Posts', '/posts'); ?></li>
 	            </ul>
+                  <ul class="nav pull-right">
+                      <li class="dropdown">
+                          <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                              <li><a tabindex="-1" href="#"><?php echo $this->Html->link('Logout', '/users/logout'); ?></a></li>
+                          </ul>
+
+                      </li>
+                  </ul>
 	          </div><!--/.nav-collapse -->
 	        </div>
 	      </div>
 	    </div>
 
-	    <div class="container-fluid">
+	    <div class="container-fluid" style="margin-top: 70px;">
 	        <div class="row-fluid">
 	            <div class="span3">
 	              <div class="well sidebar-nav">
 	                <h3>Sidebar</h3>
 	                <ul class="nav nav-list">
 	                  <li class="nav-header">Sidebar</li>
-	                  <li><?php echo $this->Html->link('Link1', '/link1'); ?></li>
-	                  <li><?php echo $this->Html->link('Link2', '/link2'); ?></li>
-	                  <li><?php echo $this->Html->link('Link3', '/link3'); ?></li>
+	                  <li><?php echo $this->Html->link('Users', '/users'); ?></li>
+	                  <li><?php echo $this->Html->link('Posts', '/posts'); ?></li>
 	                </ul>
 	              </div><!--/.well -->
 	            </div><!--/span-->
@@ -68,7 +80,7 @@
 	        </div><!--/row-->
 
 	      <footer>
-	        <p>&copy; MyCompany <?php echo date('Y'); ?></p>
+	        <p>&copy; Weboise Lab <?php echo date('Y'); ?></p>
 	      </footer>
 
 	    </div> <!-- /container -->

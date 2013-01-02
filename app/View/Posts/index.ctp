@@ -3,10 +3,11 @@
     'Add Post',
     array('controller' => 'posts', 'action' => 'add')
 ); ?>
-<table>
+<table class="table table-striped">
     <tr>
         <th>Id</th>
         <th>Title</th>
+        <th>Action</th>
         <th>Created</th>
     </tr>
 
