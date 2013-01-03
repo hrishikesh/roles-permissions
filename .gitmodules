@@ -1,0 +1,3 @@
+[submodule "app/Plugin/BootstrapCake"]
+	path = app/Plugin/BootstrapCake
+	url = git@github.com:visionred/BootstrapCake.git
